@@ -43,7 +43,6 @@ I didn't have time to focus on the challenge. But I reached 12.94 as best score 
 │                         generated with `pip freeze > requirements.txt`
 │
 ├── setup.cfg          <- Configuration file for flake8
-'''
 ```
 
 --------

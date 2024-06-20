@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "air_quality_challenge"
+version = "0.0.1"
+description = "This project focuses on estimating PM2.5 levels in eight African cities using satellite observations and machine learning techniques based on Aerosol Optical Depth (AOD). Ground-based data will validate these estimates. Deployed via AirQo's platform, this initiative aims to empower communities with vital air quality information for tackling local pollution, improving public health, and advancing environmental justice."
+authors = [
+  { name = "David Baruch AKPOVI" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.11.8"
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.ruff.lint.isort]
+known_first_party = ["air_quality_challenge"]
+force_sort_within_sections = true

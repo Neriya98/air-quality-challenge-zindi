@@ -6,6 +6,11 @@
 
 This project focuses on estimating PM2.5 levels in eight African cities using satellite observations and machine learning techniques based on Aerosol Optical Depth (AOD). Ground-based data will validate these estimates. Deployed via AirQo's platform, this initiative aims to empower communities with vital air quality information for tackling local pollution, improving public health, and advancing environmental justice.
 
+I just wanted to share my preprocessing tasks. Perhaps it will help someone that want to do samething. 
+
+Here I used some package to run some queries about meteo informations and also get some informations about capital of countries in the datasets. 
+I didn't have time to focus on the challenge. But I reached 12.94 as best score in the leaderboard.
+
 ## Project Organization
 
 ```
@@ -38,24 +43,7 @@ This project focuses on estimating PM2.5 levels in eight African cities using sa
 │                         generated with `pip freeze > requirements.txt`
 │
 ├── setup.cfg          <- Configuration file for flake8
-│
-└── air_quality_challenge                <- Source code for use in this project.
-    │
-    ├── __init__.py    <- Makes air_quality_challenge a Python module
-    │
-    ├── data           <- Scripts to download or generate data
-    │   └── make_dataset.py
-    │
-    ├── features       <- Scripts to turn raw data into features for modeling
-    │   └── build_features.py
-    │
-    ├── models         <- Scripts to train models and then use trained models to make
-    │   │                 predictions
-    │   ├── predict_model.py
-    │   └── train_model.py
-    │
-    └── visualization  <- Scripts to create exploratory and results oriented visualizations
-        └── visualize.py
+'''
 ```
 
 --------
